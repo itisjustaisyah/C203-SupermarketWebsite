@@ -5,12 +5,17 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
+    </script>
     <style>
         @font-face {
             font-family: "Megan";
-            src: local("Megan"),
-            url("Megan Demo.otf") format("opentype")
+            src: url("Megan Demo.otf") format("opentype")
+        }
+        .card-img-top {
+            width: 100%;
+            height: 15rem;
+            object-fit: scale-down ;
         }
     </style>
 
@@ -35,40 +40,64 @@
     </div>
 </nav>
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 m-5">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" style="margin: auto; align-content: center">
     <div class="col">
-        <div class="card w-75">
-            <img class="card-img-top rounded" src="images/cheese.png" alt="Card image">
+        <div class="card w-75 mx-auto" >
+            <div class="card-body"  role="button" data-bs-toggle="collapse" data-bs-target="#card1" aria-expanded="false">
+                <img class="card-img-top rounded " src="images/cheese.png" alt="Card image">
+                <h4 class="card-title ">"Cheese"</h4>
+                <p class="card-text">$2.00</p>
+            </div>
             <div class="card-body">
+                <div id="card1" class="collapse">
+                    <p>It is said rats like this product. Legend has it that there is a giant rat that makes all the rules and lead the rats in whatever trouble they can get themselves into.</p>
+                    <a href="#" class="btn btn-primary container-fluid">Buy</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="col">
+        <div class="card w-75 mx-auto" >
+            <div class="card-body"  role="button" data-bs-toggle="collapse" data-bs-target="#card2" aria-expanded="false">
+                <img class="card-img-top rounded " src="images/notbutter.png" alt="Card image">
                 <h4 class="card-title ">Cheese</h4>
                 <p class="card-text">$2.00</p>
+            </div>
+            <div class="card-body">
+                <div id="card2" class="collapse">
+                    <p>Trust us, it's definetely not butter. In fact, it's so much not butter that you will start to question reality.</p>
+                    <a href="#" class="btn btn-primary container-fluid">Buy</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="col">
-        <div class="card w-75">
-            <img class="card-img-top rounded" src="images/cheese.png" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title ">Cheese</h4>
+        <div class="card w-75 mx-auto" >
+            <div class="card-body"  role="button" data-bs-toggle="collapse" data-bs-target="#card3" aria-expanded="false">
+                <img class="card-img-top rounded " src="images/apple.png" alt="Card image">
+                <h4 class="card-title ">Gapple</h4>
                 <p class="card-text">$2.00</p>
+            </div>
+            <div class="card-body">
+                <div id="card3" class="collapse">
+                    <p>This apple is said to be the same that led to teh downfall of man, that or the creation of god</p>
+                    <a href="#" class="btn btn-primary container-fluid">Buy</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="col">
-        <div class="card w-75">
-            <img class="card-img-top rounded" src="images/cheese.png" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title ">Cheese</h4>
+        <div class="card w-75 mh-25 mx-auto" >
+            <div class="card-body"  role="button" data-bs-toggle="collapse" data-bs-target="#card4" aria-expanded="false">
+                <img class="card-img-top rounded" src="images/bottle.png" alt="Card image">
+                <h4 class="card-title ">Coke</h4>
                 <p class="card-text">$2.00</p>
             </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card w-75">
-            <img class="card-img-top rounded" src="images/cheese.png" alt="Card image">
             <div class="card-body">
-                <h4 class="card-title ">Cheese</h4>
-                <p class="card-text">$2.00</p>
+                <div id="card4" class="collapse">
+                    <p>Don't report us to the authorites, snitches get stiches and much, much worse</p>
+                    <a href="#" class="btn btn-primary container-fluid">Buy</a>
+                </div>
             </div>
         </div>
     </div>
