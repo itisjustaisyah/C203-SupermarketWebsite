@@ -5,18 +5,19 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js">
+
+    </script>
     <style>
         @font-face {
             font-family: "Megan";
-            src: local("Megan"),
-            url("Megan Demo.otf") format("opentype")
+            src: url("Megan Demo.otf") format("opentype");
         }
     </style>
 
 </head>
-<body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<body class="bg-dark">
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="Hompage.html?_ijt=4khmo88v1tqgdad85v2l2n3do0&_ij_reload=RELOAD_ON_SAVE#" style="font-family: 'Megan',serif;"><h3>QUESTIONABLE MARKET</h3></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -34,5 +35,25 @@
         </div>
     </div>
 </nav>
+
+<div class="container">
+    <div class="container-fluid m-4 bg-light text-dark text-center p-4">
+        <h1>Come Into Contact With Us</h1>
+        <p>Customer-Service Hotline: 1-1800-1234-5678</p>
+        <div id="mailing" class="collapse show multi-collapse ">
+            <form name="mailingList">
+            Join the mailing list for the latest offers:
+            <input type="email" minlength="14">
+            <br>
+            <input class="btn btn-dark m-4" type="submit" role="button" value="Join Now" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="thanks mailing">
+        </form>
+        </div>
+        <div id="thanks" class="collapse multi-collapse">
+            <p>Thank you for joining us :]</p>
+            <i class="fas fa-eye fa-lg" style="font-size: 500%"></i>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
